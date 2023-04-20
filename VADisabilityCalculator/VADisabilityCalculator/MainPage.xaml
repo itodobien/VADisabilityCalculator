@@ -1,0 +1,53 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VADisabilityCalculator.MainPage">
+
+    <StackLayout Spacing="40" Padding="20">
+        <Label Text="VA Disability Calculator" FontSize="Large" HorizontalOptions="Center" />
+
+        <Label Text="Select disability percentage:" FontSize="Medium"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Button Text="10%" Clicked="OnPercentageClicked" Grid.Row="0" Grid.Column="0" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="20%" Clicked="OnPercentageClicked" Grid.Row="0" Grid.Column="1" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="30%" Clicked="OnPercentageClicked" Grid.Row="0" Grid.Column="2" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="40%" Clicked="OnPercentageClicked" Grid.Row="0" Grid.Column="3" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="50%" Clicked="OnPercentageClicked" Grid.Row="0" Grid.Column="4" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+
+            <Button Text="60%" Clicked="OnPercentageClicked" Grid.Row="1" Grid.Column="0" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="70%" Clicked="OnPercentageClicked" Grid.Row="1" Grid.Column="1" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="80%" Clicked="OnPercentageClicked" Grid.Row="1" Grid.Column="2" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="90%" Clicked="OnPercentageClicked" Grid.Row="1" Grid.Column="3" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+            <Button Text="100%" Clicked="OnPercentageClicked" Grid.Row="1" Grid.Column="4" BackgroundColor="#2196F3" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+
+            <Label x:Name="EnteredRatingsLabel" Text="You have selected: " FontSize="Medium" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" HorizontalOptions="Center" />
+
+            <Button Text="Clear" Clicked="OnClearClicked" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="#F44336" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="5" />
+        </Grid>
+
+        <Label x:Name="CombinedRatingLabel" FontSize="Medium" />
+
+        <Label Text="Please note that the results provided by this app are intended for estimation purposes only and should not be considered as official or definitive. Actual VA combined disability ratings may differ from the calculated results. For accurate and up-to-date information, consult with the Department of Veterans Affairs or a qualified representative."
+               FontSize="Small"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"
+               TextColor="Gray"
+               HorizontalTextAlignment="Center" />
+    </StackLayout>
+</ContentPage>
