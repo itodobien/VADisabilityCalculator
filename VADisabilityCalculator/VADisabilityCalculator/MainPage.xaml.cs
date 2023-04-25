@@ -5,14 +5,7 @@ using Xamarin.Forms;
 
 namespace VADisabilityCalculator
 {
-    public class VACompensationRate
-    {
-        public int DisabilityPercentage { get; set; }
-        public bool Married { get; set; }
-        public int Parents { get; set; }
-        public int Children { get; set; }
-        public string Rate { get; set; }
-    }
+    
     public partial class MainPage : ContentPage
 
     {
@@ -220,7 +213,7 @@ namespace VADisabilityCalculator
                 { (1, 1, 0), 1917.06 },
                 { (1, 1, 1), 2020.06 },
                 { (1, 2, 0), 2030.06 },
-                { (1, 2, 1), 2233.06  },
+                { (1, 2, 1), 2133.06 },
         }
     },
     {
