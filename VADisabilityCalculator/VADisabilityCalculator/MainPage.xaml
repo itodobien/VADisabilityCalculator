@@ -173,6 +173,6 @@
                VerticalOptions="EndAndExpand" 
                TextColor="Gray"
                HorizontalTextAlignment="Center" />
+        </Grid>
     </StackLayout>
-
 </ContentPage>
